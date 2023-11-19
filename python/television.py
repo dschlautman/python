@@ -41,7 +41,7 @@ class Television:
             self.__muted = False
             if self.__volume > Television.MIN_VOLUME:
                 if self.__volume == Television.MIN_VOLUME:
-                    self.__volume = 0
+                    self.__volume = Television.MIN_VOLUME
                 else:
                     self.__volume -= 1
 
